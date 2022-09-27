@@ -2,6 +2,7 @@ class Pessoa {
     // Propriedades
     nome = 'sem nome';
     genero = 'não informado';
+    idade;
 
     // Métodos
     mostraGenero() {
@@ -10,6 +11,17 @@ class Pessoa {
 
     mostraNome(){
         console.log( this.nome );
+    }
+
+    verificaIdade(){
+        /* if( this.idade >= 18 ){
+            return 'é maior';
+        } else {
+            return 'é menor';
+        } */
+
+        /* if/else ternário */
+        return this.idade >= 18 ? 'é maior' : 'é menor';
     }
 }
 
@@ -55,6 +67,15 @@ aluno.nome = 'Palloma';
 aluno.genero = 'feminino';
 aluno.matricula = '123abc';
 aluno.curso = 'JS para React';
+
+aluno.idade = 25;
+
+console.log(aluno.nome);
+console.log(aluno.idade);
+
+console.log(
+    aluno.verificaIdade()
+);
 
 //console.log(aluno);
 aluno.mostraDados();
