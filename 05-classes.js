@@ -69,7 +69,6 @@ aluno.matricula = '123abc';
 aluno.curso = 'JS para React';
 
 aluno.idade = 25;
-
 console.log(aluno.nome);
 console.log(aluno.idade);
 
